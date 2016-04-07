@@ -55,4 +55,22 @@ public class Student {
     }
     
 
+    public void displayStudent(){
+        System.out.println("name:"+name + " no:"+no);
+    }
+
+    @Override
+    public String toString() {
+        return name ;
+    }
+    
+
+    public static void main(String[] args) {
+        Student s1 = new Student("Ali");
+        s1.displayStudent();
+        System.out.println(s1);
+        
+        String s = s1 + "xxx";
+        System.out.println(s);
+    }
 }
